@@ -12,15 +12,16 @@ Llamadas a un método
 
 ::
 
-  GET   {url}/nombre-de-api/v1/metodo.json?auth_key={AUTH KEY}
+  GET   {url}/api/nombre-de-api/rut/{rut}/?apikey={apikey}
 
 
 
 Por tanto, la estructura de la ruta de la solicitud es:
-``nombre-de-api`` es el nombre de la API.
-``v1`` es la versión de la API.
-``metodo`` es el método solicitado.
-``auth_key=TU_AUTH_KEY`` es la clave que necesitarás para cada solicitud.
+``api`` es parte del nombre de la API.
+``nombre-de-api`` es el nombre del servicio o de la API.
+``rut`` es parte del nombre de la API e indica el parámetro por el que se hará la consulta, en este ejemplo por el rut.
+`{rut}`` es el parámetro de ruta correspondiente al rut por el que se realiza la búsqueda.
+``apikey`` es la clave que necesitarás para cada solicitud.
 
 
 Estructura JSON de salida
