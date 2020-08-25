@@ -6,8 +6,8 @@ La API de Prestadores expone datos del Registro Nacional de Prestadores Individu
 
 La API se compone de dos métodos:
 
-    | ``/prestadores/{rut}``
-    | ``/prestadores/antecedentes/{rut}``
+    | ``/prestadores/rut/{rut}``
+    | ``/prestadores/registro/{registro}``
 
 
 
