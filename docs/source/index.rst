@@ -14,7 +14,6 @@ Contenido
 
    4. Prestadores <../_sections/04-prestadores>
 
-   5. Afiliados <../_sections/05-afiliados>
 
 
 Esperamos que disfruten y utilicen de manera exitosa la plataforma SuperSalud Desarrolladores.
