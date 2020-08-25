@@ -2,11 +2,10 @@
 API Prestadores
 ===============
 
-La API de Prestadores expone datos del Registro Nacional de Prestadores Individuales de Salud. Permite buscar prestadores por rut, nombres, apellidos, titulos y región; y consultar los antecedentes de un prestador mediante su rut.
+La API de Prestadores expone datos del Registro Nacional de Prestadores Individuales de Salud. Permite buscar prestadores mediante su rut o número de registro.
 
-La API se compone de tres métodos:
+La API se compone de dos métodos:
 
-    | ``/prestadores``
     | ``/prestadores/{rut}``
     | ``/prestadores/antecedentes/{rut}``
 
@@ -15,9 +14,9 @@ La API se compone de tres métodos:
 Prestadores
 ===========
 
-Los métodos ``/prestadores`` y ``/prestadores/{rut}`` devuelven la ficha de un prestador en dos formatos: JSON y HL7.
+Los métodos ``/prestadores/rut/{rut}`` y ``/prestadores/registro/{registro}`` devuelven la ficha de un prestador en dos formatos: JSON y HL7.
 
-En el caso de ``/prestadores`` la respuesta es una lista de los prestadores encontrados en la búsqueda, mientras que en ``/prestadores/{rut}`` la respuesta es un único prestador.
+En ambos casos: ``/prestadores/rut/{rut}`` y ``/prestadores/registro/{registro}`` la respuesta es un único prestador.
 
 
 
