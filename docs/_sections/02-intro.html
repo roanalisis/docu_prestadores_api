@@ -1,0 +1,274 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introducción &mdash; SuperSalud Desarrolladores 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Métodos" href="03-metodos.html" />
+    <link rel="prev" title="Presentación" href="01-index.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> SuperSalud Desarrolladores
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01-index.html">1. Presentación</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Introducción</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#registro">Registro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#autorizacion">Autorización</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#errores">Errores</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#paginacion">Paginación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versiones">Versiones</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="03-metodos.html">3. Métodos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04-prestadores.html">4. Prestadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05-afiliados.html">5. Afiliados</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SuperSalud Desarrolladores</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Introducción</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/_sections/02-intro.rst.txt" rel="nofollow"> Ver código fuente</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduccion">
+<h1>Introducción<a class="headerlink" href="#introduccion" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="registro">
+<h2>Registro<a class="headerlink" href="#registro" title="Permalink to this headline">¶</a></h2>
+<p>Para hacer llamadas a esta API se requerirá un código de acceso (AUTH KEY) que se enviará como parámetro en cada solicitud. Para solicitar tu código de acceso debes registrarte haciendo click <a class="reference external" href="https://desarrolladores.superdesalud.gob.cl/signup/">aquí</a>.</p>
+</div>
+<div class="section" id="autorizacion">
+<h2>Autorización<a class="headerlink" href="#autorizacion" title="Permalink to this headline">¶</a></h2>
+<p>Una vez autenticado en SuperSalud Desarrolladores podrás obtener tu AUTH KEY ingresando a cada API.</p>
+<p>Las AUTH KEY son únicas y deben mantenerse en secreto. En caso requieran una AUTH KEY pública deben contactarse con el equipo de SuperSalud Desarrolladores.</p>
+<p>Los métodos públicos podrán ser consultados mediante la registración en SuperSalud Desarrolladores. En cambio, para acceder a métodos privados, el equipo de SuperSalud Desarrolladores debe previamente autorizarlo.</p>
+<p>Si un método es despublicado o borrado, no podrá consultarlo.</p>
+<p>Las limitaciones de consultas se definen a nivel global de API o por método consultado. Puede ver el detalle de los límites en cada método.</p>
+<p>Las AUTH KEY solo permiten operaciones de lectura.</p>
+</div>
+<div class="section" id="errores">
+<h2>Errores<a class="headerlink" href="#errores" title="Permalink to this headline">¶</a></h2>
+<p>La API de SuperSalud Desarrolladores por defecto usa respuesta HTTP convencionales para indicar el éxito o el fracaso de una llamada a la API. Siguiendo los lineamientos HTTP los códigos de rango 2xx indican éxito y los códigos de rango 4xx indican un error.</p>
+<ul class="simple">
+<li>ParseError: Se han enviado erróneamente los argumentos al método “400 Bad Request”.</li>
+<li>AuthenticationFailed: Error de autenticación “401 Unauthenticated”</li>
+<li>NotAuthenticated: El query viene sin autenciación “401 Unauthenticated”</li>
+<li>PermissionDenied: Error de acceso no permitido “403 Forbidden”.</li>
+<li>NotFound: El recurso no se encuenta “404 Not Found”.</li>
+<li>MethodNotAllowed: Se quiere ejecutar un método (POST, PUT, ect) no permitido “405 Method Not Allowed”.</li>
+<li>NotAcceptable: Se pide que se devuelva la inforamción en un tipo de dato que no es válido “406 Not Acceptable”.</li>
+<li>UnsupportedMediaType: Se intenta subir un tipo de dato que no es válido “415 Unsupported Media Type”.</li>
+<li>Throttled: Se superó el límite de accesos “429 Too Many Requests”.</li>
+<li>ValidationError: Parámetros inválidos “400 Bad Request”.</li>
+<li>UnexpectedError: Error inesperado “500 internal Server”.</li>
+</ul>
+<p>Algunos métodos pueden responder con errores específicos que se encuentran documentados en la sección correspondiente a cada método.</p>
+</div>
+<div class="section" id="paginacion">
+<h2>Paginación<a class="headerlink" href="#paginacion" title="Permalink to this headline">¶</a></h2>
+<p>Todos los métodos de listado de recursos de la API tienen el funcionamiento de paginado. Cualquiera puede recibir el siguiente parámetro:</p>
+<ul class="simple">
+<li>from: página de resultados</li>
+</ul>
+</div>
+<div class="section" id="versiones">
+<h2>Versiones<a class="headerlink" href="#versiones" title="Permalink to this headline">¶</a></h2>
+<p>Puede identificar las versiones de cada API en su página de detalles.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="03-metodos.html" class="btn btn-neutral float-right" title="Métodos" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="01-index.html" class="btn btn-neutral" title="Presentación" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Superintentencia de Salud.
+
+    </p>
+  </div>
+  Construido con <a href="http://sphinx-doc.org/">Sphinx</a> usando una <a href="https://github.com/rtfd/sphinx_rtd_theme">plantilla</a> de <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+
+</html>

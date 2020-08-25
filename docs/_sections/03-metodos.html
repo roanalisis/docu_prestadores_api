@@ -1,0 +1,349 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Métodos &mdash; SuperSalud Desarrolladores 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="API Prestadores" href="04-prestadores.html" />
+    <link rel="prev" title="Introducción" href="02-intro.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> SuperSalud Desarrolladores
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01-index.html">1. Presentación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-intro.html">2. Introducción</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Métodos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#llamadas-a-un-metodo">Llamadas a un método</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#estructura-json-de-salida">Estructura JSON de salida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#consultar-un-metodo-con-parametros">Consultar un método con parámetros</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#filtrar-los-resultados-de-una-vista">Filtrar los resultados de una vista</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ordenar-los-datos">Ordenar los Datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#paginar-los-resultados">Paginar los resultados</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#establecer-formato-de-valores-numericos">Establecer formato de valores númericos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#agrupaciones-y-funciones-sobre-vistas-de-datos">Agrupaciones y Funciones sobre vistas de datos</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="04-prestadores.html">4. Prestadores</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05-afiliados.html">5. Afiliados</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SuperSalud Desarrolladores</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Métodos</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/_sections/03-metodos.rst.txt" rel="nofollow"> Ver código fuente</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="metodos">
+<h1>Métodos<a class="headerlink" href="#metodos" title="Permalink to this headline">¶</a></h1>
+<p>Las APIs están conformadas por conjuntos de métodos que exponen los datos.</p>
+<p>A continuación se detallan ejemplos generales. Para mayot especificidad, sugerimos revisar la documentación de cada API.</p>
+<div class="section" id="llamadas-a-un-metodo">
+<h2>Llamadas a un método<a class="headerlink" href="#llamadas-a-un-metodo" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>GET   {url}/nombre-de-api/v1/metodo.json?auth_key={AUTH KEY}
+</pre></div>
+</div>
+<p>Por tanto, la estructura de la ruta de la solicitud es:
+<code class="docutils literal notranslate"><span class="pre">nombre-de-api</span></code> es el nombre de la API.
+<code class="docutils literal notranslate"><span class="pre">v1</span></code> es la versión de la API.
+<code class="docutils literal notranslate"><span class="pre">metodo</span></code> es el método solicitado.
+<code class="docutils literal notranslate"><span class="pre">auth_key=TU_AUTH_KEY</span></code> es la clave que necesitarás para cada solicitud.</p>
+</div>
+<div class="section" id="estructura-json-de-salida">
+<h2>Estructura JSON de salida<a class="headerlink" href="#estructura-json-de-salida" title="Permalink to this headline">¶</a></h2>
+<p>El resultado es un JSON. Su formato puede variar entre métodos. A modo de ejemplo, suele utilizarse el siguiente formato:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+ <span class="nt">&quot;headers&quot;</span><span class="p">:[</span>
+    <span class="s2">&quot;Fecha&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Valor&quot;</span>
+ <span class="p">],</span>
+ <span class="nt">&quot;data&quot;</span><span class="p">:[</span>
+    <span class="p">[</span>
+       <span class="s2">&quot;02-01-1984&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;87.54&quot;</span>
+    <span class="p">],</span>
+    <span class="p">[</span>
+       <span class="s2">&quot;03-01-1984&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;87.62&quot;</span>
+    <span class="p">],</span>
+    <span class="p">[</span>
+       <span class="s2">&quot;04-01-1984&quot;</span><span class="p">,</span>
+       <span class="s2">&quot;87.63&quot;</span>
+    <span class="p">]</span>
+ <span class="p">],</span>
+ <span class="nt">&quot;cols&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+ <span class="nt">&quot;rows&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+ <span class="nt">&quot;length&quot;</span><span class="p">:</span><span class="mi">12653</span><span class="p">,</span>
+ <span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="mi">1534922262659</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">headers</span></code> indica los atributos de los valores.</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">data</span></code> expone los valores correspondientes a los atributos.</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">cols</span></code> la cantidad de columnas de datos</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">rows</span></code> la cantidad de filas incluidas en la respuesta.</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">lengt</span></code> la cantidad de filas totales del método</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">timestamp</span></code> contiene el tiempo POSIX de cuando fue actualizada la fuente de datos de forma exitosa por última vez.</div>
+</div>
+</div>
+<div class="section" id="consultar-un-metodo-con-parametros">
+<h2>Consultar un método con parámetros<a class="headerlink" href="#consultar-un-metodo-con-parametros" title="Permalink to this headline">¶</a></h2>
+<p>Un método puede contener parámetros.</p>
+<p>Por ejemplo, el siguiente método contiene el parámetro ‘anio’ y el parámetro ‘mes’:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>GET   {url}/indicadores/v1/metodo.json?auth_key={AUTH KEY}&amp;anio=2010&amp;mes=01
+</pre></div>
+</div>
+<p>De manera que para consultar métodos con parámetros, debe enviarse el nombre del parámentro y un valor válido. En caso que los valores no sean válidos, la respuesta será en base a los valores por defecto.</p>
+</div>
+<div class="section" id="filtrar-los-resultados-de-una-vista">
+<h2>Filtrar los resultados de una vista<a class="headerlink" href="#filtrar-los-resultados-de-una-vista" title="Permalink to this headline">¶</a></h2>
+<p>La API de SuperSalud Desarrolladores permite a sus usuarios filtrar los resultados obtenidos durante la solicitud de un método utilizando la siguiente sintaxis:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>GET   {url}/indicadores/v1/metodo.json?auth_key={AUTH KEY}&amp;filter0=column2[&gt;]190&amp;filter1=column0[==]Chile&amp;where=(filter and filter1)
+</pre></div>
+</div>
+<p>Esta solicitud retorna todos los datos que sean mayores a 190 en la columna 5 y sean iguales a la palabra “Chile” en la columna 0.</p>
+<p>Los filtros pueden ir desde 0 a N (filter0, filter1…filterN) y tienen la siguiente sintaxis:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">operando0</span> <span class="o">|</span> <span class="n">operador</span> <span class="n">lógico</span> <span class="o">|</span> <span class="n">operando1</span>
+</pre></div>
+</div>
+<p>Los operando0 pueden ser rownum (número de fila) o columnN (columna N, donde N es un entero que va desde 0 a N). El operando1 por lo general es una cadena de texto, número o fecha.</p>
+<p>Los operadores lógicos pueden ser:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="o">==</span><span class="p">],</span> <span class="p">[</span><span class="o">&gt;</span><span class="p">],</span> <span class="p">[</span><span class="o">&lt;</span><span class="p">],</span> <span class="p">[</span><span class="o">!=</span><span class="p">],</span> <span class="p">[</span><span class="n">contains</span><span class="p">],</span> <span class="p">[</span><span class="o">&gt;=</span><span class="p">],</span> <span class="p">[</span><span class="o">&lt;=</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Los corchetes [] deben ser incluidos. Los operandos son sensibles a mayúsculas si el contenido es una cadena de texto. En el caso del operador lógico [contains], el orden de los operandos debe invertirse.</p>
+<p>La operación where tiene una expresión lógica para concatenar filtros de tipo AND u OR. En este caso, se utilizaría (filter0 and filter1). Las expresiones and y or sirven para diferenciar la relación entre los filtros y pueden concatenarse tanto como fuera necesario para cumplir una cierta condicion por ejemplo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">filter0</span> <span class="ow">and</span> <span class="n">filter1</span><span class="p">)</span> <span class="ow">or</span> <span class="n">filter2</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ordenar-los-datos">
+<h2>Ordenar los Datos<a class="headerlink" href="#ordenar-los-datos" title="Permalink to this headline">¶</a></h2>
+<p>La API permite ordenar los resultados obtenidos durante la solicitud de un método utilizando el parámetro <code class="docutils literal notranslate"><span class="pre">orderBy</span></code>. Debe indicarse la columna sobre la cual deseamos ordenar los resultados y entre corchetes si el orden debe ser ascedente [A] o descendente [D].</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>GET   {url}/indicadores/v1/metodo.json?auth_key={AUTH KEY}&amp;orderBy0=column0[A]&amp;orderBy1=column1[D]
+</pre></div>
+</div>
+<p>En este caso ordenamos la primer columna de forma ascendente y la segunda columnade forma descendente.</p>
+</div>
+<div class="section" id="paginar-los-resultados">
+<h2>Paginar los resultados<a class="headerlink" href="#paginar-los-resultados" title="Permalink to this headline">¶</a></h2>
+<p>Los métodos pueden estar paginados o pueden paginarse en las consultas. Deben utilizarse los siguientes parámetros:</p>
+<ul class="simple">
+<li>limit: cantidad de resultados por búsqueda, su valor no puede ser superior al límite establecido en el método</li>
+<li>page: página sobre la cual se retornan los resultados, según lo especificado en <code class="docutils literal notranslate"><span class="pre">limit</span></code></li>
+</ul>
+<p>Por ejemplo, esta llamada devuelve 20 filas y se ubica en la página 3:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>GET   {url}/indicadores/v1/metodo.json?auth_key={AUTH KEY}&amp;limit=20&amp;page=3
+</pre></div>
+</div>
+</div>
+<div class="section" id="establecer-formato-de-valores-numericos">
+<h2>Establecer formato de valores númericos<a class="headerlink" href="#establecer-formato-de-valores-numericos" title="Permalink to this headline">¶</a></h2>
+<p>El argumento applyFormat permite obtener los resultados de los valores númericos y de fecha en diferentes formatos.</p>
+<p>Convierte a string con formato estadounidense: <code class="docutils literal notranslate"><span class="pre">applyFormat=0</span></code></p>
+<p>Convierte a string aplicando el displayFormat configurado en la vista: <code class="docutils literal notranslate"><span class="pre">applyFormat=1</span></code></p>
+<p>NUMBER y DATES como double: <code class="docutils literal notranslate"><span class="pre">applyFormat=-1</span></code></p>
+</div>
+<div class="section" id="agrupaciones-y-funciones-sobre-vistas-de-datos">
+<h2>Agrupaciones y Funciones sobre vistas de datos<a class="headerlink" href="#agrupaciones-y-funciones-sobre-vistas-de-datos" title="Permalink to this headline">¶</a></h2>
+<p>Puedes aplicar algunas FUNCIONES y AGRUPACIONES sobre los datos de una vista. Las operaciones se realizan a demanda sobre un juego de columnas definido en una llamada API y asociados a través de dos parámetros <code class="docutils literal notranslate"><span class="pre">groupBy</span></code> y <code class="docutils literal notranslate"><span class="pre">function</span></code>. El resultado puede ser reutilizado como una fuente tipo web service REST/JSON para crear nuevos recursos de datos (vistas, visualizaciones) en el área de trabajo. Las funciones disponibles actualmente son SUM (suma), COUNT (contar), y AVG (promedio).</p>
+<p>En primer lugar definiremos la columna que servirá para agrupar mediante el parametro <code class="docutils literal notranslate"><span class="pre">groupBy</span></code> seguido de un número que indica la jerarquía <code class="docutils literal notranslate"><span class="pre">(groupBy0=column0,</span> <span class="pre">groupBy1=column2...)</span></code>. Luego, aplicamos una función <code class="docutils literal notranslate"><span class="pre">function</span></code> aplicada en la columna sobre la que vamos a operar. Debes incluir paréntesis cuadrados (brackets) al ingresar la columna, pudiendo concatenar mas de una function agregandole un número entero empezando desde cero <code class="docutils literal notranslate"><span class="pre">(function0=SUM[column0],</span> <span class="pre">function1=COUNT[column10])</span></code>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="04-prestadores.html" class="btn btn-neutral float-right" title="API Prestadores" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="02-intro.html" class="btn btn-neutral" title="Introducción" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Anterior</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Superintentencia de Salud.
+
+    </p>
+  </div>
+  Construido con <a href="http://sphinx-doc.org/">Sphinx</a> usando una <a href="https://github.com/rtfd/sphinx_rtd_theme">plantilla</a> de <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+
+</html>
