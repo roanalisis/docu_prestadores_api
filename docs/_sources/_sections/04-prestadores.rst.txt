@@ -98,7 +98,7 @@ Estructura FHIR
 Estructura JSON
 ---------------
 
-Este es un ejemplo de salida en formato JSON del metódo ``/prestadores``
+Este es un ejemplo de salida en formato JSON del metódo ``/prestadores/rut/{rut}``
 
 .. code-block:: json
 
