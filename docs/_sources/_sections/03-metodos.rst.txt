@@ -20,7 +20,7 @@ Por tanto, la estructura de la ruta de la solicitud es:
 ``api`` es parte del nombre de la API.
 ``nombre-de-api`` es el nombre del servicio o de la API.
 ``rut`` es parte del nombre de la API e indica el parámetro por el que se hará la consulta, en este ejemplo por el rut.
-`{rut}`` es el parámetro de ruta correspondiente al rut por el que se realiza la búsqueda.
+``{rut}`` es el parámetro de ruta correspondiente al rut por el que se realiza la búsqueda.
 ``apikey`` es la clave que necesitarás para cada solicitud.
 
 
