@@ -4,7 +4,7 @@ Métodos
 
 Las APIs están conformadas por conjuntos de métodos que exponen los datos.
 
-A continuación se detallan ejemplos generales. Para mayot especificidad, sugerimos revisar la documentación de cada API.
+A continuación se detallan ejemplos generales. para mayor detalle, sugerimos revisar la documentación de cada API.
 
 
 Llamadas a un método
