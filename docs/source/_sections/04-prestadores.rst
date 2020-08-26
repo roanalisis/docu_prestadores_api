@@ -34,28 +34,31 @@ Este es un ejemplo de salida en formato JSON del metódo ``/prestadores/rut/{rut
 .. code-block:: json
 
         {
-          "apiVersion": "1.0",
-          "prestador":  {
-                "rut": 16329928,
-                "nombres": "Bernarda Ivette",
-                "apellidoPaterno": "Neira",
-                "apellidoMaterno": "Macaya",
-                "sexo": "Femenino",
-                "fechaNacimiento": "02-12-1986",
-                "titulos": "Técnico de Nivel Superior en Enfermería",
-                "especialidades": null,
-                "habilitadora": "Centro de Formación Técnica INACAP",
-                "vigencia": null,
-                "codigoBusqueda": "Técnico en Nivel Superior en Salud",
-                "regionPrestador": null,
-                "comunaPrestador": null,
-                "searchRegionTrabajo": "VIII Región del Biobío|Región del Bío Bío" ,
-                "telefonos": null,
-                "direccion": null,
-                "email": null,
-                "estado": "Registrado"
-           },
-         "timestamp": 0
+          "nro_registro" : "000000",
+          "sexo" : "Femenino",
+          "apellido_materno" : "Uchiha",
+          "apellido_paterno" : "Haruno",
+          "codigo_busqueda" : "Auxiliares Paramédicos de Farmacia",
+          "dv" : "9",
+          "fecha_nacimiento" : "22-9-1967",
+          "fecha_registro" : "17-10-2011",
+          "nacionalidad" : "Chilena",
+          "nombres" : "Évelin Andrea",
+          "rut" : 1,
+          "universidad" : "No Informada",
+          "observaciones" : "",
+          "antecedentes" : [
+            {
+              "clase_antecedente" : "Título",
+              "cod_antecedente" : "Auxiliar Paramédico de Farmacia",
+              "fecha_antecedente" : "12/20/92",
+              "fecha_registro" : "10/17/2011",
+              "nro_resolucion" : "000",
+              "procedencia" : "Universidad de Chile",
+              "tipo_antecedente" : "T"
+            }
+          ],
+          "fecha_carga" : "07/08/2020"
         }
 
 
