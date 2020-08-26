@@ -6,17 +6,17 @@ La API de Prestadores expone datos del Registro Nacional de Prestadores Individu
 
 La API se compone de dos métodos:
 
-    | ``/prestadores/rut/{rut}``
-    | ``/prestadores/registro/{registro}``
+    | ``/api/prestadores/rut/{rut}``
+    | ``/api/prestadores/registro/{registro}``
 
 
 
 Prestadores
 ===========
 
-Los métodos ``/prestadores/rut/{rut}`` y ``/prestadores/registro/{registro}`` devuelven la ficha de un prestador en formato JSON.
+Los métodos ``/api/prestadores/rut/{rut}`` y ``/api/prestadores/registro/{registro}`` devuelven la ficha de un prestador en formato JSON.
 
-En ambos casos: ``/prestadores/rut/{rut}`` y ``/prestadores/registro/{registro}`` la respuesta es un único prestador.
+En ambos casos: ``/api/prestadores/rut/{rut}`` y ``/api/prestadores/registro/{registro}`` la respuesta es un único prestador.
 
 
 
@@ -29,7 +29,7 @@ En ambos casos: ``/prestadores/rut/{rut}`` y ``/prestadores/registro/{registro}`
 Estructura JSON
 ---------------
 
-Este es un ejemplo de salida en formato JSON. Requiere que se envie el rut del prestador para obtener sus antecedentes. ``/prestadores/rut/{rut}``
+Este es un ejemplo de salida en formato JSON. Requiere que se envie el rut del prestador para obtener sus antecedentes. ``/api/prestadores/rut/{rut}``
 
 .. code-block:: json
 
