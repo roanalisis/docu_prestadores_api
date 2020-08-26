@@ -5,15 +5,15 @@ Introducción
 Registro
 ========
 
-Para hacer llamadas a esta API se requerirá un código de acceso (4. apikey) que se enviará como parámetro en cada solicitud. Para solicitar tu código de acceso debes registrarte haciendo click `aquí <#>`_.
+Para hacer llamadas a esta API se requerirá un código de acceso (apikey) que se enviará como parámetro en cada solicitud. Para solicitar tu código de acceso debes registrarte haciendo click `aquí <#>`_.
 
 
 Autorización
 ============
 
-Una vez autenticado en SuperSalud Desarrolladores podrás obtener tu 4. apikey ingresando a cada API.
+Una vez autenticado en SuperSalud Desarrolladores podrás obtener tu apikey ingresando a cada API.
 
-Las 4. apikey son únicas y deben mantenerse en secreto. En caso requieran una 4. apikey pública deben contactarse con el equipo de SuperSalud Desarrolladores.
+Las apikey son únicas y deben mantenerse en secreto. En caso requieran una apikey pública deben contactarse con el equipo de SuperSalud Desarrolladores.
 
 Los métodos públicos podrán ser consultados mediante la registración en SuperSalud Desarrolladores. En cambio, para acceder a métodos privados, el equipo de SuperSalud Desarrolladores debe previamente autorizarlo.
 
@@ -21,7 +21,7 @@ Si un método es despublicado o borrado, no podrá consultarlo.
 
 Las limitaciones de consultas se definen a nivel global de API o por método consultado. Puede ver el detalle de los límites en cada método.
 
-Las 4. apikey solo permiten operaciones de lectura.
+Las apikey solo permiten operaciones de lectura.
 
 
 Errores

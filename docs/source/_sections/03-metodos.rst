@@ -74,7 +74,7 @@ Un método puede contener parámetros.
 Por ejemplo, el siguiente método contiene el parámetro 'anio' y el parámetro 'mes':
 ::
 
-  GET   {url}/indicadores/v1/metodo.json?auth_key={4. apikey}&anio=2010&mes=01
+  GET   {url}/indicadores/v1/metodo.json?auth_key={apikey}&anio=2010&mes=01
 
 
 De manera que para consultar métodos con parámetros, debe enviarse el nombre del parámentro y un valor válido. En caso que los valores no sean válidos, la respuesta será en base a los valores por defecto.
@@ -88,7 +88,7 @@ La API de SuperSalud Desarrolladores permite a sus usuarios filtrar los resultad
 
 ::
 
-  GET   {url}/indicadores/v1/metodo.json?auth_key={4. apikey}&filter0=column2[>]190&filter1=column0[==]Chile&where=(filter and filter1)
+  GET   {url}/indicadores/v1/metodo.json?auth_key={apikey}&filter0=column2[>]190&filter1=column0[==]Chile&where=(filter and filter1)
 
 
 Esta solicitud retorna todos los datos que sean mayores a 190 en la columna 5 y sean iguales a la palabra “Chile” en la columna 0.
@@ -118,7 +118,7 @@ La API permite ordenar los resultados obtenidos durante la solicitud de un méto
 
 ::
 
-  GET   {url}/indicadores/v1/metodo.json?auth_key={4. apikey}&orderBy0=column0[A]&orderBy1=column1[D]
+  GET   {url}/indicadores/v1/metodo.json?auth_key={apikey}&orderBy0=column0[A]&orderBy1=column1[D]
 
 En este caso ordenamos la primer columna de forma ascendente y la segunda columnade forma descendente.
 
@@ -136,7 +136,7 @@ Por ejemplo, esta llamada devuelve 20 filas y se ubica en la página 3:
 
 ::
 
-  GET   {url}/indicadores/v1/metodo.json?auth_key={4. apikey}&limit=20&page=3
+  GET   {url}/indicadores/v1/metodo.json?auth_key={apikey}&limit=20&page=3
 
 
 
