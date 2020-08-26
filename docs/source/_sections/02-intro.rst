@@ -45,15 +45,7 @@ La API de SuperSalud Desarrolladores por defecto usa respuesta HTTP convencional
 Algunos métodos pueden responder con errores específicos que se encuentran documentados en la sección correspondiente a cada método.
 
 
-Paginación
-==========
-
-Todos los métodos de listado de recursos de la API tienen el funcionamiento de paginado. Cualquiera puede recibir el siguiente parámetro:
-
-- from: página de resultados
 
 
-Versiones
-=========
 
-Puede identificar las versiones de cada API en su página de detalles.
+
