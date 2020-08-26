@@ -20,76 +20,7 @@ En ambos casos: ``/prestadores/rut/{rut}`` y ``/prestadores/registro/{registro}`
 
 
 
-Estándar FHIR
--------------
 
-Los métodos de la API de Prestadores entregan los datos en un formato json basado en el estándar FHIR de HL7 https://en.wikipedia.org/wiki/Fast_Healthcare_Interoperability_Resources.
-
-Puede leer la documentación del estándar en https://www.hl7.org/fhir/practitioner.html. Para acceder a un ejemplo en JSON vea https://www.hl7.org/fhir/practitioner-example.json.html
-
-
-
-Estructura FHIR
----------------
-
-
-.. code-block:: json
-
-   [
-       {
-           "resourceType": "Practitioner",
-           "id": "16329928",
-           "text": {
-               "status": "Registrado",
-               "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"> </div>"
-           },
-           "identifier": [
-               {
-                   "use": "oficial",
-                   "system": "RNPI",
-                   "value": "16329928"
-               }
-           ],
-           "active": "Registrado",
-           "name": [
-               {
-                   "use": "oficial",
-                   "text": "Bernarda Ivette Macaya Neira",
-                   "family": "Macaya Neira",
-                   "given": "Bernarda Ivette"
-               }
-           ],
-           "telecom": [
-               {
-                   "system": "phone",
-                   "value": "",
-                   "use": "work"
-               }
-           ],
-           "address": [
-               {
-                   "use": "work",
-                   "type": "physical",
-                   "text": "",
-                   "district": ""
-               }
-           ],
-           "gender": "Femenino",
-           "birthDate": "02-12-1986",
-           "qualification": [
-               {
-                   "identifier": [
-                       {
-                           "system": "RNPI",
-                           "value": "16329928"
-                       }
-                   ],
-                   "issuer": {
-                       "display": "Centro de Formación Técnica INACAP;"
-                   }
-               }
-           ]
-       }
 
 
 
