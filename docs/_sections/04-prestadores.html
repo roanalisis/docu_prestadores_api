@@ -276,8 +276,7 @@
                   <div class="section" id="estructura-json">
                     <h3>Estructura JSON<a class="headerlink" href="#estructura-json"
                         title="Permalink to this headline">¶</a></h3>
-                    <p>Este es un ejemplo de salida en formato JSON del metódo <code
-                        class="docutils literal notranslate"><span class="pre">/prestadores/rut/{rut}</span></code></p>
+                    <p>Este es un ejemplo de salida en formato JSON. Requiere que se envie el rut del prestador para obtener sus antecedentes. <code class="docutils literal notranslate"><span class="pre">/prestadores/rut/{rut}</span></code></p>
                     <div class="highlight-json notranslate">
                       <div class="highlight">
                         <pre><span></span><span class="p">{</span>
@@ -324,76 +323,84 @@
                       </thead>
                       <tbody valign="top">
                         <tr class="row-even">
+                          <td>nro_registro</td>
+                          <td>Número de registro del prestador consultado</td>
+                        </tr>
+                        <tr class="row-odd">
+                          <td>sexo</td>
+                          <td>sexo</td>
+                        </tr>
+                        <tr class="row-even">
+                          <td>nombres</td>
+                          <td>Nombres del prestador consultado</td>
+                        </tr>
+                        <tr class="row-odd">
+                          <td>apellido_paterno</td>
+                          <td>Apellido paterno</td>
+                        </tr>
+                        <tr class="row-even">
+                          <td>apellido_materno</td>
+                          <td>Apellido materno</td>
+                        </tr>
+                        <tr class="row-odd">
+                          <td>fecha_nacimiento</td>
+                          <td>Fecha de nacimiento expresada en formato dd-mm-yyyy</td>
+                        </tr>
+                        <tr class="row-even">
+                          <td>fecha_registro</td>
+                          <td>Fecha de registro expresada en formato dd-mm-yyyy</td>
+                        </tr>
+                        <tr class="row-odd">
+                          <td>nacionalidad</td>
+                          <td>Nacionalidad del prestador consultado</td>
+                        </tr>
+                        <tr class="row-even">
                           <td>rut</td>
                           <td>RUT, identificador único</td>
                         </tr>
                         <tr class="row-odd">
-                          <td>nombres</td>
-                          <td>Nombres del prestador consultado</td>
+                          <td>dv</td>
+                          <td>Dígito verificador</td>
                         </tr>
                         <tr class="row-even">
-                          <td>apellidoPaterno</td>
-                          <td>Apellido paterno</td>
-                        </tr>
-                        <tr class="row-odd">
-                          <td>apellidoMaterno</td>
-                          <td>Apellido materno</td>
-                        </tr>
-                        <tr class="row-even">
-                          <td>sexo</td>
-                          <td>Sexo</td>
-                        </tr>
-                        <tr class="row-odd">
-                          <td>fechaNacimiento</td>
-                          <td>Fecha de nacimiento expresada en formato dd-mm-yyyy</td>
-                        </tr>
-                        <tr class="row-even">
-                          <td>titulos</td>
-                          <td>Títulos habilitantes</td>
-                        </tr>
-                        <tr class="row-odd">
-                          <td>especialidad</td>
-                          <td>Especialidad principal registrada</td>
-                        </tr>
-                        <tr class="row-even">
-                          <td>habilitadora</td>
-                          <td>Nombre de la institución que entrega la matrícula habilitante</td>
-                        </tr>
-                        <tr class="row-odd">
-                          <td>vigencia</td>
-                          <td>Vigencia de la matrícula</td>
-                        </tr>
-                        <tr class="row-even">
-                          <td>codigoBusqueda</td>
+                          <td>codigo_busqueda</td>
                           <td>Título habilitante</td>
                         </tr>
                         <tr class="row-odd">
-                          <td>regionPrestador</td>
-                          <td>Región en la que se registró el prestador</td>
+                          <td>universidad</td>
+                          <td>Universidad dónde estudió del prestador consultado</td>
                         </tr>
                         <tr class="row-even">
-                          <td>comunaPrestador</td>
-                          <td>Comuna en la que se encuentra inscripto</td>
+                          <td>observaciones</td>
+                          <td>observaciones</td>
                         </tr>
                         <tr class="row-odd">
-                          <td>searchRegionTrabajo</td>
-                          <td>Regiones en las que se encuentra inscripto el prestador</td>
+                          <td>clase_antecedente</td>
+                          <td>Por ejemplo si corresponde a un título</td>
                         </tr>
                         <tr class="row-even">
-                          <td>telefonos</td>
-                          <td>Teléfonos de contacto</td>
+                          <td>cod_antecedente</td>
+                          <td>Título habilitante</td>
                         </tr>
                         <tr class="row-odd">
-                          <td>direccion</td>
-                          <td>Dirección</td>
+                          <td>fecha_antecedente</td>
+                          <td>Fecha antecedente</td>
                         </tr>
                         <tr class="row-even">
-                          <td>email</td>
-                          <td>Correo electrónico de contacto</td>
+                          <td>fecha_registro</td>
+                          <td>Fecha registro</td>
                         </tr>
                         <tr class="row-odd">
-                          <td>estado</td>
-                          <td>Estado del prestador, su único valor es “Registrado”</td>
+                          <td>nro_resolucion</td>
+                          <td>Número resolución</td>
+                        </tr>
+                        <tr class="row-odd">
+                          <td>Procedencia</td>
+                          <td>Nombre de la institución en la que estudió</td>
+                        </tr>
+                        <tr class="row-odd">
+                          <td>tipo_antecedente</td>
+                          <td>Tipo antecedente</td>
                         </tr>
                       </tbody>
                     </table>

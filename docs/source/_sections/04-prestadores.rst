@@ -29,7 +29,7 @@ En ambos casos: ``/prestadores/rut/{rut}`` y ``/prestadores/registro/{registro}`
 Estructura JSON
 ---------------
 
-Este es un ejemplo de salida en formato JSON del metódo ``/prestadores/rut/{rut}``
+Este es un ejemplo de salida en formato JSON. Requiere que se envie el rut del prestador para obtener sus antecedentes. ``/prestadores/rut/{rut}``
 
 .. code-block:: json
 
@@ -68,24 +68,26 @@ Diccionario
 ===================        =====================================================
 Atributo                   Descripción
 ===================        =====================================================
-rut                        RUT, identificador único
-nombres                    Nombres del prestador consultado
-apellidoPaterno            Apellido paterno
-apellidoMaterno            Apellido materno
+nro_registro               Número de registro del prestador consultado
 sexo                       Sexo
-fechaNacimiento            Fecha de nacimiento expresada en formato dd-mm-yyyy
-titulos                    Títulos habilitantes
-especialidad               Especialidad principal registrada
-habilitadora               Nombre de la institución que entrega la matrícula habilitante
-vigencia                   Vigencia de la matrícula
-codigoBusqueda             Título habilitante
-regionPrestador            Región en la que se registró el prestador
-comunaPrestador            Comuna en la que se encuentra inscripto
-searchRegionTrabajo        Regiones en las que se encuentra inscripto el prestador
-telefonos                  Teléfonos de contacto
-direccion                  Dirección
-email                      Correo electrónico de contacto
-estado                     Estado del prestador, su único valor es "Registrado"
+nombres                    Nombres del prestador consultado
+apellido_paterno           Apellido paterno
+apellido_materno           Apellido materno
+fecha_nacimiento           Fecha de nacimiento expresada en formato dd-mm-yyyy
+fecha_registro             Fecha de registro expresada en formato dd-mm-yyyy
+nacionalidad               Nacionalidad del prestador consultado
+rut                        RUT, identificador único
+dv                         Dígito verificador
+codigo_busqueda            Título habilitante
+universidad                Universidad dónde estudió del prestador consultado
+observaciones              Observaciones
+clase_antecedente          Por ejemplo si corresponde a un título
+cod_antecedente            Título habilitante
+fecha_antecedente          Fecha antecedente
+fecha_registro             Fecha registro
+nro_resolucion             Número resolución
+Procedencia                Nombre de la institución en la que estudió
+tipo_antecedente           Tipo antecedente
 ===================        =====================================================
 
 
