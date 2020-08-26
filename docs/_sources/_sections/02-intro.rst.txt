@@ -11,7 +11,7 @@ Para hacer llamadas a esta API se requerirá un código de acceso (apikey) que s
 Autorización
 ============
 
-Una vez autenticado en SuperSalud Desarrolladores podrás obtener tu apikey ingresando a cada API.
+Una vez autenticado en SuperSalud Desarrolladores podrás obtener tu apikey.
 
 Las apikey son únicas y deben mantenerse en secreto. En caso requieran una apikey pública deben contactarse con el equipo de SuperSalud Desarrolladores.
 
