@@ -29,7 +29,7 @@ En ambos casos: ``/api/prestadores/rut/{rut}`` y ``/api/prestadores/registro/{re
 Estructura JSON
 ---------------
 
-Este es un ejemplo de salida en formato JSON. Requiere que se envie el rut del prestador para obtener sus antecedentes. ``/api/prestadores/rut/{rut}``
+Este es un ejemplo de salida en formato JSON. Requiere que se envie el rut del prestador, sin el dígito verificador, para obtener sus antecedentes. ``/api/prestadores/rut/{rut}``
 
 .. code-block:: json
 
