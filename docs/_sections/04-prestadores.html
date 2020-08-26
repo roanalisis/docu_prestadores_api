@@ -96,7 +96,7 @@
                     <li class="toctree-l3"><a class="reference internal" href="#diccionario">Diccionario</a></li>
                   </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#antecedentes">Antecedentes</a>
+                <!-- <li class="toctree-l2"><a class="reference internal" href="#antecedentes">Antecedentes</a> -->
                   <ul>
                     <li class="toctree-l3"><a class="reference internal" href="#ejemplo-de-salida">Ejemplo de salida</a>
                     </li>
@@ -315,7 +315,7 @@
                       <colgroup>
                         <col width="24%" />
                         <col width="76%" />
-                      </colgroup>
+                      </colgroup>                      
                       <thead valign="bottom">
                         <tr class="row-odd">
                           <th class="head">Atributo</th>
@@ -399,168 +399,7 @@
                     </table>
                   </div>
                 </div>
-                <div class="section" id="antecedentes">
-                  <h2>Antecedentes<a class="headerlink" href="#antecedentes" title="Permalink to this headline">¶</a>
-                  </h2>
-                  <p>El método <cite>/prestadores/antecedentes/{rut}</cite> devuelve los antedecentes de un prestador en
-                    formato JSON. Requiere que se envie el rut del prestador para obtener sus antecedentes.</p>
-                  <div class="section" id="ejemplo-de-salida">
-                    <h3>Ejemplo de salida<a class="headerlink" href="#ejemplo-de-salida"
-                        title="Permalink to this headline">¶</a></h3>
-                    <div class="highlight-json notranslate">
-                      <div class="highlight">
-                        <pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;apiVersion&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;antecedentes&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-        <span class="nt">&quot;rut&quot;</span><span class="p">:</span> <span class="mi">16329928</span><span class="p">,</span>
-        <span class="nt">&quot;nombres&quot;</span><span class="p">:</span> <span class="s2">&quot;Bernarda Ivette&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;apellidoPaterno&quot;</span><span class="p">:</span> <span class="s2">&quot;Neira&quot;</span> <span class="p">,</span>
-        <span class="nt">&quot;apellidoMaterno&quot;</span><span class="p">:</span> <span class="s2">&quot;Macaya&quot;</span> <span class="p">,</span>
-        <span class="nt">&quot;sexo&quot;</span><span class="p">:</span> <span class="s2">&quot;Femenino&quot;</span> <span class="p">,</span>
-        <span class="nt">&quot;fechaNacimiento&quot;</span><span class="p">:</span> <span class="s2">&quot;02-12-1986&quot;</span> <span class="p">,</span>
-        <span class="nt">&quot;codigoBusqueda&quot;</span><span class="p">:</span> <span class="s2">&quot;Técnico en Nivel Superior en Salud&quot;</span> <span class="p">,</span>
-        <span class="nt">&quot;comuna&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;direccion&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;rutEstablecimiento&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;nomEstablecimiento&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;nombreFantasia&quot;</span><span class="p">:</span> <span class="s2">&quot;CFT INACAP&quot;</span> <span class="p">,</span>
-        <span class="nt">&quot;regionEst&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;comunaEst&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;dirEstablecimiento&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;fechaAntecedente&quot;</span><span class="p">:</span> <span class="s2">&quot;06-06-2008&quot;</span> <span class="p">,</span>
-        <span class="nt">&quot;codAntecedente&quot;</span><span class="p">:</span> <span class="s2">&quot;Técnico de Nivel Superior en Enfermería&quot;</span> <span class="p">,</span>
-        <span class="nt">&quot;tipoAntecedente&quot;</span><span class="p">:</span> <span class="s2">&quot;T&quot;</span> <span class="p">,</span>
-        <span class="nt">&quot;claseAntecedente&quot;</span><span class="p">:</span> <span class="s2">&quot;Título&quot;</span> <span class="p">,</span>
-        <span class="nt">&quot;observacion&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;procedencia&quot;</span><span class="p">:</span> <span class="s2">&quot;Centro de Formación Técnica INACAP&quot;</span> <span class="p">,</span>
-        <span class="nt">&quot;fechaActivacion&quot;</span><span class="p">:</span> <span class="s2">&quot;28-09-2011&quot;</span> <span class="p">,</span>
-        <span class="nt">&quot;nroRegistro&quot;</span><span class="p">:</span> <span class="mi">131072</span><span class="p">,</span>
-        <span class="nt">&quot;estado&quot;</span><span class="p">:</span> <span class="s2">&quot;Registrado&quot;</span>
-        <span class="p">}</span>
-    <span class="p">],</span>
-    <span class="nt">&quot;filas&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&quot;timestamp&quot;</span><span class="p">:</span> <span class="mi">0</span>
-<span class="p">}</span>
-</pre>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="section" id="id1">
-                    <h3>Diccionario<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-                    <table border="1" class="docutils">
-                      <colgroup>
-                        <col width="26%" />
-                        <col width="74%" />
-                      </colgroup>
-                      <thead valign="bottom">
-                        <tr class="row-odd">
-                          <th class="head">Atributo</th>
-                          <th class="head">Descripción</th>
-                        </tr>
-                      </thead>
-                      <tbody valign="top">
-                        <tr class="row-even">
-                          <td>rut</td>
-                          <td>RUT, identificador único</td>
-                        </tr>
-                        <tr class="row-odd">
-                          <td>nombres</td>
-                          <td>Nombres del prestador consultado</td>
-                        </tr>
-                        <tr class="row-even">
-                          <td>apellidoPaterno</td>
-                          <td>Apellido paterno</td>
-                        </tr>
-                        <tr class="row-odd">
-                          <td>apellidoMaterno</td>
-                          <td>Apellido materno</td>
-                        </tr>
-                        <tr class="row-even">
-                          <td>sexo</td>
-                          <td>Sexo</td>
-                        </tr>
-                        <tr class="row-odd">
-                          <td>fechaNacimiento</td>
-                          <td>Fecha de nacimiento expresada en formato dd-mm-yyyy</td>
-                        </tr>
-                        <tr class="row-even">
-                          <td>codigoBusqueda</td>
-                          <td>Nombre descriptivo del antecedente</td>
-                        </tr>
-                        <tr class="row-odd">
-                          <td>comuna</td>
-                          <td>Comuna en la que se encuentra inscripto</td>
-                        </tr>
-                        <tr class="row-even">
-                          <td>direccion</td>
-                          <td>Dirección</td>
-                        </tr>
-                        <tr class="row-odd">
-                          <td>rutEstablecimiento</td>
-                          <td>RUT, idendificador único del establecimiento</td>
-                        </tr>
-                        <tr class="row-even">
-                          <td>nomEstablecimiento</td>
-                          <td>Nombre del establecimiento</td>
-                        </tr>
-                        <tr class="row-odd">
-                          <td>nombreFantasia</td>
-                          <td>Nombre de fantasía del establecimiento</td>
-                        </tr>
-                        <tr class="row-even">
-                          <td>regionEst</td>
-                          <td>Región del establecimiento</td>
-                        </tr>
-                        <tr class="row-odd">
-                          <td>comunaEst</td>
-                          <td>Comuna del establecimiento</td>
-                        </tr>
-                        <tr class="row-even">
-                          <td>dirEstablecimiento</td>
-                          <td>Dirección del establecimiento</td>
-                        </tr>
-                        <tr class="row-odd">
-                          <td>fechaAntecedente</td>
-                          <td>Fecha del antecedente</td>
-                        </tr>
-                        <tr class="row-even">
-                          <td>codAntecedente</td>
-                          <td>Código del antecedente</td>
-                        </tr>
-                        <tr class="row-odd">
-                          <td>tipoAntecedente</td>
-                          <td>Tipo del antecedente</td>
-                        </tr>
-                        <tr class="row-even">
-                          <td>claseAntecedente</td>
-                          <td>Clase del antecedente</td>
-                        </tr>
-                        <tr class="row-odd">
-                          <td>observacion</td>
-                          <td>Observaciones complementarias</td>
-                        </tr>
-                        <tr class="row-even">
-                          <td>procedencia</td>
-                          <td>Nombre del establecimiento que otorgó el antecedente</td>
-                        </tr>
-                        <tr class="row-odd">
-                          <td>fechaActivacion</td>
-                          <td>Fecha de alta del antecedente</td>
-                        </tr>
-                        <tr class="row-even">
-                          <td>nroRegistro</td>
-                          <td>Identificador interno de la Superintendencia de Salud</td>
-                        </tr>
-                        <tr class="row-odd">
-                          <td>estado</td>
-                          <td>Estado del prestador, su único valor es “Registrado”</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
+                
               </div>
 
 
