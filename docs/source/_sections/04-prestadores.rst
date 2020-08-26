@@ -14,7 +14,7 @@ La API se compone de dos métodos:
 Prestadores
 ===========
 
-Los métodos ``/prestadores/rut/{rut}`` y ``/prestadores/registro/{registro}`` devuelven la ficha de un prestador en dos formatos: JSON y HL7.
+Los métodos ``/prestadores/rut/{rut}`` y ``/prestadores/registro/{registro}`` devuelven la ficha de un prestador en formato JSON.
 
 En ambos casos: ``/prestadores/rut/{rut}`` y ``/prestadores/registro/{registro}`` la respuesta es un único prestador.
 
