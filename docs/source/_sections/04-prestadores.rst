@@ -34,31 +34,31 @@ Este es un ejemplo de salida en formato JSON. Requiere que se envie el rut del p
 .. code-block:: json
 
         {
-          "nro_registro" : "000000",
-          "sexo" : "Femenino",
-          "apellido_materno" : "Uchiha",
-          "apellido_paterno" : "Haruno",
-          "codigo_busqueda" : "Auxiliares Paramédicos de Farmacia",
-          "dv" : "9",
-          "fecha_nacimiento" : "22-9-1967",
-          "fecha_registro" : "17-10-2011",
-          "nacionalidad" : "Chilena",
-          "nombres" : "Évelin Andrea",
-          "rut" : 1,
-          "universidad" : "No Informada",
-          "observaciones" : "",
-          "antecedentes" : [
-            {
-              "clase_antecedente" : "Título",
-              "cod_antecedente" : "Auxiliar Paramédico de Farmacia",
-              "fecha_antecedente" : "12/20/92",
-              "fecha_registro" : "10/17/2011",
-              "nro_resolucion" : "000",
-              "procedencia" : "Universidad de Chile",
-              "tipo_antecedente" : "T"
-            }
-          ],
-          "fecha_carga" : "07/08/2020"
+            "nro_registro": "334583",
+            "sexo": "Femenino",
+            "nombres": "Rosa Elena",
+            "apellido_paterno": "Fernández",
+            "apellido_materno": "Mena",
+            "fecha_nacimiento": "13-11-1976",
+            "fecha_registro": "18-5-2012",
+            "nacionalidad": "Chilena",
+            "rut": 12950968,
+            "dv": "6",
+            "codigo_busqueda": "Técnico en Nivel Superior en Salud",
+            "universidad": "No Informada",
+            "observaciones": "",
+            "fecha_carga": "26/08/2020",
+            "antecedentes": [
+                {
+                    "clase_antecedente": "Título",
+                    "cod_antecedente": "Técnico Laboratorista Dental",
+                    "fecha_antecedente": "08/17/2000",
+                    "fecha_registro": "No Informada",
+                    "nro_resolucion": "412",
+                    "procedencia": "CFT Santo Tomás",
+                    "tipo_antecedente": "T"
+                }
+            ]
         }
 
 
