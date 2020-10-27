@@ -2,16 +2,11 @@
 Introducción
 ============
 
-Registro
-========
-
-Para hacer llamadas a esta API se requerirá un código de acceso (apikey) que se enviará como parámetro en cada solicitud. Para solicitar tu código de acceso debes registrarte haciendo click `aquí <#>`_.
-
 
 Autorización
 ============
 
-Una vez autenticado en SuperSalud Desarrolladores podrás obtener tu apikey.
+Una vez autenticado podrás obtener tu apikey.
 
 Las apikey son únicas y deben mantenerse en secreto. En caso requieran una apikey pública deben contactarse con el equipo de SuperSalud Desarrolladores.
 
