@@ -11,7 +11,9 @@ Esta API está organizada en base a los conceptos REST. Es decir, la API está o
 
 El portal SuperSalud Desarrolladores tiene sus propias limitaciones respecto a consultas por minuto y totales mensuales. Puede ver el detalle de los límites en cada método.
 
-Ante cualquier duda contactenos a apis-portal@superdesalud.gob.cl para más detalles.
+Para obtener acceso a la API debes realizar una solicitud formal a la Intendencia de Prestadores según lo estrablecido en la siguiente circular: https://www.supersalud.gob.cl/normativa/668/w3-article-20126.html.
+
+Ante cualquier duda contáctanos a apis-portal@superdesalud.gob.cl para más detalles.
 
 
 Equipo Superintendecia de Salud
