@@ -2,6 +2,12 @@
 Introducción
 ============
 
+Registro
+========
+
+Para hacer llamadas a esta API se requerirá un código de acceso (apikey) que se enviará como parámetro en cada solicitud.
+Para obtener acceso a la API debes realizar una solicitud formal a la Intendencia de Prestadores según lo estrablecido en la siguiente circular: https://www.supersalud.gob.cl/normativa/668/w3-article-20126.html.
+
 
 Autorización
 ============
